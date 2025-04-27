@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Use a simple sans-serif font for better readability */
+  background-color: #f1f1f1; /* Light gray background for contrast */
+}
+
+.App {
+  max-width: 800px; /* Limit the maximum width for better readability */
+  margin: 0 auto; /* Center align the app */
+  text-align: center;
+  padding: 20px;
+  background: white; /* White background for the app container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.App-header {
+  background-color: #282c34; /* Dark background for the header */
+  padding: 20px;
+  color: white; /* White text for contrast */
+  border-radius: 10px; /* Rounded corners like the app container */
+  margin-bottom: 20px; /* Space below header */
+}
+
+.news-container {
+  background: #f9f9f9; /* Slightly off-white background for news container */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.poll-container {
+  margin: 20px 0;
+  background: #f9f9f9; /* Matching background color */
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.button-group {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center align buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+.poll-button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Comfortable padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.poll-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.chart-container {
+  margin: 20px auto; /* Auto margins for centering */
+  padding: 20px; /* Padding for the container */
+  background: #f9f9f9; /* Matching background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 5px; /* Less space between buttons */
+  }
+}
