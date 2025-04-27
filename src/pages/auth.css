@@ -1,0 +1,70 @@
+/* Full Page Centering */
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Box */
+  .login-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Inputs */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Toggle Links */
+  .toggle-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007BFF;
+  }
+  
+  /* Clickable Toggle Text */
+  .toggle-text {
+    color: #007BFF;
+    cursor: pointer;
+  }
