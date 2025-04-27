@@ -17,23 +17,21 @@ function LiveNews() {
       console.log('Disconnected from WebSocket');
     });
 
-    // Listen for news updates
     socket.on('news', (data) => {
-      console.log('Received news data:', data);  // Log the entire data object
+      console.log('Received news data:', data);  
     
-      // Directly check for title and url properties
       if (data && data.title && data.url) {
-        console.log('Adding title to newsList:', data.title);  // Log the title being added
+        console.log('Adding title to newsList:', data.title);  
         setNewsList((prev) => {
           const updatedNewsList = [
             ...prev,
-            { title: data.title, url: data.url }  // Store both title and URL
+            { title: data.title, url: data.url }  
           ];
-          console.log('Updated newsList:', updatedNewsList);  // Log the updated list
+          console.log('Updated newsList:', updatedNewsList);  
           return updatedNewsList;
         });
       } else {
-        console.error('Received malformed data:', data);  // Log error if data is malformed
+        console.error('Received malformed data:', data);  
       }
     });
     
